@@ -85,21 +85,11 @@ ScrollReveal({
 
 
  /*======= Download CV ======*/
- function descargarDocumento() {
-    // URL del documento que deseas descargar
-    var documentoURL = "/Users/ledolley/Desktop/Portafolio/CV/Certificado.pdf";
+function descargarDocumento() {
+    // URL del documento de Google Drive
+    var documentoURL = "https://drive.google.com/uc?export=download&id=1XJMIC5SXv4j9R3R6qYC0ECPD8I7e34fs";
 
-    // Crear un enlace oculto
-    var enlace = document.createElement("a");
-    enlace.href = documentoURL;
-    enlace.target = "_blank";
-    enlace.download = "Certificado.pdf"; // Nombre que se asignará al archivo descargado
-
-    // Agregar el enlace al DOM y simular el clic para descargar
-    document.body.appendChild(enlace);
-    enlace.click();
-
-    // Eliminar el enlace del DOM una vez finalizada la descarga
-    document.body.removeChild(enlace);
-  }
+    // Abrir enlace en otra pestaña
+    window.open(documentoURL, "_blank");
+};
 
