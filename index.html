@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ledolley's Portfolio</title>
+        <link rel="icon" href="images/favicon.ico">
+
+        <!--swiper css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+        <!--Box icons-->
+        <link
+            href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!-- Header -->
+        <header class="header">
+            <a href="#" class="logo">Portfolio.</a>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="bx bx-moon" id="darkMode-icon"></div>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </header>
+
+        <!--Home section-->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, I am</h3>
+                <h1>Antony Ledolley</h1>
+                <p>fgchvjbn kugyftfcx ggvbhjnkoiuy iftdfcgvh bjhuyt ufdchgvhbjn hugyftdfxc gvhb
+                    jnhguyf tdcfgvhb hguyftchg</p>
+
+                <div class="social-media">
+                    <a href="#">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bx bxl-instagram-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+                </div>
+
+                <button class="btn" onclick="descargarDocumento()">Download CV</button>
+            </div>
+
+            <div class="profession-container">
+                <div class="profession-box">
+                    <div class="profession" style="--i:0;">
+                        <i class="bx bx-code-alt"></i>
+                        <h3>Web Developer</h3>
+                    </div>
+
+                    <div class="profession" style="--i:1;">
+                        <i class="bx bxl-react"></i>
+                        <h3>Front End Developer</h3>
+                    </div>
+
+                    <div class="profession" style="--i:2;">
+                        <i class="bx bxl-nodejs"></i>
+                        <h3>Backend Developer</h3>
+                    </div>
+
+                    <div class="profession" style="--i:3;">
+                        <i class="bx bx-code-curly"></i>
+                        <h3>Fullstack Developer</h3>
+                    </div>
+
+                    <div class="circle"></div>
+                </div>
+
+                <div class="overlay"></div>
+            </div>
+
+            <div class="home-img">
+                <img src="images/home.png" alt="">
+            </div>
+        </section>
+
+        <!--About section-->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="images/about.png" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About
+                    <span>Me</span></h2>
+                <h3>Hi, I'm Here To Help You</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sem mauris,
+                    sagittis ac tincidunt nec, ornare eget odio. Donec maximus metus non urna
+                    rhoncus viverra. Morbi non orci urna. Nam fermentum, justo quis iaculis
+                    scelerisque, justo sem mollis dolor, ut lobortis neque ipsum at enim. Donec
+                    tempor pulvinar nisl, ac cursus nisi commodo a. Aliquam neque libero, feugiat ut
+                    nisl et, dictum consectetur quam. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos himenaeos. Nullam non magna et velit
+                    consequat aliquet. Curabitur at luctus elit. In hac habitasse platea dictumst.
+                    Donec gravida gravida lectus id condimentum. Integer porta dolor in est
+                    efficitur laoreet. Aliquam id nisi enim. Proin tincidunt aliquam nulla, luctus
+                    luctus metus tempor a. Mauris vulputate commodo lacus vel vulputate.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+
+        <!--Services section-->
+        <section class="services" id="services">
+            <h2 class="heading">My
+                <span>Services</span></h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <h3>Functional Pages</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iusto ab
+                        tempora aliquid, impedit earum sapiente sunt inventore quae quia doloribus!
+                        Sint.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+                <div class="services-box">
+                    <i class='bx bxs-bullseye'></i>
+                    <h3>Elegant Inteface</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iusto ab
+                        tempora aliquid, impedit earum sapiente sunt inventore quae quia doloribus!
+                        Sint.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+
+                <div class="services-box">
+                    <i class="bx bxs-heart"></i>
+                    <h3>Guaranteed to work</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iusto ab
+                        tempora aliquid, impedit earum sapiente sunt inventore quae quia doloribus!
+                        Sint.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Portfolio section-->
+        <section class="portfolio" id="portfolio">
+        <h2 class="heading">Lastest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, provident cupiditate.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, a labore!</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, neque rerum.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, error impedit!</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, ea at?</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nemo vitae!</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!--Testimonials-->
+        <div class="testimonial-container">
+            <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+            <div class="testimonial-wrapper">
+                <div class="testimonial-box mySwiper">
+                    <div class="testimonial-content swiper-wrapper">
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/testimonial1.png" alt="">
+                            <h3>Jessica Mercado</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit culpa
+                                assumenda quibusdam nemo accusamus repudiandae soluta quaerat dolores quas eum!
+                                Eum, fugiat!</p>
+                        </div>
+
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/testimonial2.png" alt="">
+                            <h3>Rodrigo de la Ossa</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit culpa
+                                assumenda quibusdam nemo accusamus repudiandae soluta quaerat dolores quas eum!
+                                Eum, fugiat!</p>
+                        </div>
+
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/testimonial3.png" alt="">
+                            <h3>Andrea Angulo</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit culpa
+                                assumenda quibusdam nemo accusamus repudiandae soluta quaerat dolores quas eum!
+                                Eum, fugiat!</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact-->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Ledolley | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+        </footer>
+
+        <!--Scroll reveal-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--swiper JS-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!--JS-->
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
