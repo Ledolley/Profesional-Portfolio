@@ -87,7 +87,7 @@ ScrollReveal({
  /*======= Download CV ======*/
 function descargarDocumento() {
     // URL del documento de Google Drive
-    var documentoURL = "https://drive.google.com/uc?export=download&id=1XJMIC5SXv4j9R3R6qYC0ECPD8I7e34fs";
+    var documentoURL = "https://drive.google.com/uc?export=download&id=11cQUsMqgjUlJv4LCVKHJwmHsowj6Ut0V";
 
     // Abrir enlace en otra pestaña
     window.open(documentoURL, "_blank");
