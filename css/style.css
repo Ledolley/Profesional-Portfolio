@@ -558,6 +558,17 @@ span{
     margin-top: 2rem;
     cursor: pointer;
 }
+#alertMessage{
+    display: none;
+    border: .1rem solid var(--main-color);
+    width:20%;
+    margin:10px auto;
+    padding:10px;
+    border-radius:5px;
+    box-shadow:0 0 5px 5px var(--shadow-color);
+    background-color: var(--bg-color);
+    text-align: center;
+}
 
 .footer{
     display: flex;

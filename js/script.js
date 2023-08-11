@@ -79,7 +79,7 @@ ScrollReveal({
  });
 
  ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
- ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
+ ScrollReveal().reveal('.home-img img, .services-container, .testimonial-wrapper, .contact form', { origin: 'bottom' });
  ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
  ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
@@ -92,4 +92,60 @@ function descargarDocumento() {
     // Abrir enlace en otra pestaña
     window.open(documentoURL, "_blank");
 };
+/*==== Alerta ===*/
+function showTemporaryMessage(message, duration) {
+    const messageElement = document.getElementById("alertMessage");
+
+    // Mostrar el mensaje
+    messageElement.textContent = message;
+    messageElement.style.display = "block";
+
+    // Ocultar el mensaje después de la duración especificada
+    setTimeout(function() {
+        messageElement.style.display = "none";
+    }, duration);
+}
+
+/* ===== Send Email ====== */
+document.addEventListener("DOMContentLoaded", function() {
+    emailjs.init("Xxnu1dzK_2GEto5I-"); // Reemplaza "user_yourUserID" con tu User ID de EmailJS
+
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const data = new FormData(form);
+
+        emailjs.send("service_086kp5s", "template_mz89gml", {
+            from_name: data.get("name"),
+            from_email: data.get("email"),
+            message: data.get("message"),
+            number: data.get("number"),
+            subject: data.get("subject")
+        })
+        .then(function(response) {
+            console.log("Correo enviado:", response);
+
+        const nameElement = document.getElementById("name");
+        const emailElement = document.getElementById("email");
+        const messageElement = document.getElementById("message");
+        const numberElement = document.getElementById("number");
+        const subjectElement = document.getElementById("subject");
+        nameElement.value = "";
+        emailElement.value = "";
+        messageElement.value = "";
+        numberElement.value = "";
+        subjectElement.value = "";
+        showTemporaryMessage("Gracias por contactarte conmigo!", 5000)
+
+        }, function(error) {
+            console.error("Error al enviar el correo:", error);
+            // Aquí puedes manejar el error de alguna manera
+        });
+    });
+});
+
+
+
+
 
